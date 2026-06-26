@@ -6,3 +6,6 @@ if mynum==0:
     print("Heads")
 else:
     print("Tails")
+import modules
+number=modules.number
+print(number)
