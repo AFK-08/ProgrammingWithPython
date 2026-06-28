@@ -13,4 +13,11 @@ def myFunction():
 myFunction()  #Function Calling
 
 
+#WhileLoops
+#While condition:
+     #statements
+     
+
+
+
 
