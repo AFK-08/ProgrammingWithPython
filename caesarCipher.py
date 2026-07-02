@@ -1,5 +1,5 @@
 def encrypt(message,shiftNumber):
-    letters='abcdefghijklmnopkrstuvwxyzabcdefghijklmnopkrstuvwx'
+    letters='abcdefghijklmnopkrstuvwxyz'
     letterslist=[]
     for letter in letters:
         letterslist.append(letter)
@@ -13,7 +13,7 @@ def encrypt(message,shiftNumber):
     for letter in messagelist:
         if letter in letterslist:
             x=letterslist.index(letter)
-            x=x+shiftNumber
+            x=(x+shiftNumber)%len(letterslist)
             encryptedList.append(letterslist[x])
         else:
             encryptedList.append(letter)
@@ -21,7 +21,7 @@ def encrypt(message,shiftNumber):
     print(f"Here is your encoded result: {encryption}")
 
 def decrypt(message,shiftNumber):
-    letters='zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedc'
+    letters='zyxwvutsrqponmlkjihgfedcba'
     letterslist=[]
     for letter in letters:
         letterslist.append(letter)
@@ -35,7 +35,7 @@ def decrypt(message,shiftNumber):
     for letter in messagelist:
         if letter in letterslist:
             x=letterslist.index(letter)
-            x=x+shiftNumber
+            x=(x+shiftNumber)%len(letterslist)
             decryptedList.append(letterslist[x])
         else:
             decryptedList.append(letter)
