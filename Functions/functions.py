@@ -56,7 +56,21 @@ def greeting_keyword(name,location):
 
 ####Now the order of arguments doesnot matter. These are the keyword Arguments
 greeting_keyword(location="Pakistan",name="Ahmad")
+print("*****************")
 
+## Functions with Outputs
+
+def my_function():
+    return 3*10
+
+def my_function2(number):
+    return number*10
+
+result=my_function2(my_function())
+print(result)
+print("***********************")
+
+    
 
 
 
