@@ -44,6 +44,24 @@ def greeting(name,location):
 
 greeting("Ahmad","Pakistan")
 
+##Postional and Keyword Arguments
+###Positional Arguments are the by default way of calling the functions,,,,First Argument is assigned to first parameter and 2nd argument is assigned to 2nd Parameter and so on..,,,so we have to put arguments in order to get correct results
+
+##Keyword Arguments..we donot care about order because can assign arguments to parameters in function calling...
+
+##Example:
+def greeting_keyword(name,location):
+    print(f"Hello {name}")
+    print(f"What is it to be like in {location}")
+
+####Now the order of arguments doesnot matter. These are the keyword Arguments
+greeting_keyword(location="Pakistan",name="Ahmad")
+
+
+
+
+
+
 
 
 

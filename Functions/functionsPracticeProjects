@@ -1,0 +1,18 @@
+##1
+def calculate_love_score(name1,name2):
+    name3=name1+name2
+    true=0
+    love=0
+    for letter in name3.lower():
+        if letter=='t' or letter=='r' or letter=='u' or letter=='e':
+            true=true+1
+        if letter=='l' or letter=='o' or letter=='v' or letter=='e':
+            love=love+1
+    score=true*10+love
+    print(f"Love Score is {score}")
+
+calculate_love_score("Kanye West","Kim Kardashian")
+
+
+
+
