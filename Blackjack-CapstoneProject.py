@@ -26,6 +26,22 @@ if choice=="yes":
         user_cards.append(random.choice(cards))
         computer_cards.append(random.choice(cards))
         value=value+1
+    if computer_sum() or user_sum>21:
+        if computer_sum()>21:
+            computer_cards.reverse()
+            computer_cards.remove(11)
+            computer_cards.reverse()
+            computer_cards.append(1)
+        elif user_sum()>21:
+            user_cards.reverse()
+            user_cards.remove(11)
+            user_cards.reverse()
+            user_cards.append(1)
+    if computer_sum()==21:
+                    print(f"Computer cards: {computer_cards} Current Score: {computer_sum()}")
+                    print("Computer has a blackjack. You lose")
+                    exit(0)
+
 
     another_card="yes"
     while another_card=="yes":
@@ -34,16 +50,24 @@ if choice=="yes":
 
         another_card=input("Type yes if you want another card?")
         if another_card=="yes":
-            user_cards.append(random.choice(cards))
+            new_card=random.choice(cards)
+            user_cards.append(new_card)
         if user_sum()>21:
-            print(f"Your Cards: {user_cards} , Current Score: {user_sum()}")
-            print("You lose.")
-            exit(0)
+            if new_card==11:
+                user_cards.reverse()
+                user_cards.remove(11)
+                user_cards.reverse()
+                user_cards.append(1)
+            else:
+                print(f"Your Cards: {user_cards} , Current Score: {user_sum()}")
+                print("You lose.")
+                exit(0)
 
         if another_card!="yes":
             while computer_sum()<17:
                 if computer_sum()<17:
-                    new_card=computer_cards.append(random.choice(cards))
+                    new_card=random.choice(cards)
+                    computer_cards.append(new_card)
                     if new_card==11 and computer_sum()>21:
                         computer_cards.reverse()
                         computer_cards.remove(11)
@@ -54,6 +78,9 @@ if choice=="yes":
                     print("Computer has a blackjack. You lose")
                     exit(0)
             print(f"Computers cards: {computer_cards}, Current Score:  {computer_sum()}")
+            if computer_sum()>21:
+                    print("You win.")
+                    exit(0)
 
             if user_sum()==21:
                 (print("You have a blackjack. You win"))
