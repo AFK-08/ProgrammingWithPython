@@ -16,7 +16,6 @@ print("Welcome to the Number Guessing game.")
 print("I am thinking of number between 1 and 100")
 level=input("Choose difficulty level, easy or hard.\n")
 guess=random.randint(1,100)
-print(guess)
 if level=="easy":
      print("You have 10 attempts to guess.")
      number=int(input("Enter the guess: "))
