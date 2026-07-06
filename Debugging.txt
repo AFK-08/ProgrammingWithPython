@@ -1,0 +1,8 @@
+Debugging- Finding and removing errors from code.
+Describe the problem
+find why it is not working- understand what everyline is actually doing.
+
+Become computer when you are debugging- it really helps.
+squash bugs with a print() statement.
+
+
