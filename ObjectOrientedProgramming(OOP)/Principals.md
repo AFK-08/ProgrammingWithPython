@@ -16,3 +16,13 @@ have to manage all things at the same time and it becomes very complex but using
 IN OOP, we model real world objects
 Class: Blueprint of model from which objects can be made or drawn
 Objects: Actual model which we can use in code
+
+--Objects has Certain Attributes and Methods
+
+Attributes refers to the Variable
+Methods refer to the Functonality of Object
+
+
+Python Packages:
+Using code developed by other programmers to save your time--pre made classes(blueprints) and attributes of the object
+
