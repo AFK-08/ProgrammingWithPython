@@ -8,8 +8,8 @@ def subtract(n1,n2):
     return n1-n2
 print("Welcome to the Calculator")
 num1=int(input("What is the first number: "))
-value='y'
-while value=='y':
+value=True
+while value==True:
     operation=input("Which operation you want to perform: + - * / ")
     num2=int(input("Enter the 2nd number: "))
     if operation=='+':
@@ -21,10 +21,11 @@ while value=='y':
     elif operation=='/':
          result=divide(num1,num2)
     print(f"Answer is : {result}")
-    value=input("type y to continue calculation and n for not")
-    if value=='y':
+    choice=input("type 'y' to continue calculation and 'n' for not")
+    if choice=='y':
         num1=result
     else:
+        value=False
         print("Good Buy")
 
 
