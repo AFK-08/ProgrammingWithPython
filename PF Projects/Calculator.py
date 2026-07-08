@@ -6,7 +6,7 @@ def divide(n1,n2):
     return n1/n2
 def subtract(n1,n2):
     return n1-n2
-print("Welcome to Calculator")
+print("Welcome to the Calculator")
 num1=int(input("What is the first number: "))
 value='y'
 while value=='y':
