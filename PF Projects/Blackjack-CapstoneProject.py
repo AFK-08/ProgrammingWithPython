@@ -9,6 +9,7 @@ def computer_sum():
     for value in computer_cards:
         sum_computer+=value
     return sum_computer
+
 def user_sum():
     sum_user=0
     for value in user_cards:
