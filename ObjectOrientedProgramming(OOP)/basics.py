@@ -2,7 +2,7 @@
 ## object name = class name()
 ## Objects has Attributes(Variables or information ) and Methods(Functionality of Object)
 
-## To get Attribute of Object we simply use objectname.AttributeName()
+## To get Attribute of Object we simply use objectname.AttributeName
 
 
 # import turtle
