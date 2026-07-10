@@ -2,7 +2,7 @@ import turtle,random
 from turtle import Turtle,Screen
 timmy=Turtle()
 screen=Screen()
-
+timmy.pensize(7)
 colors=["red","green","cyan","blue","yellow","black","grey","orange","purple","magenta","olive","maroon","aqua","beige"]
 
 def draw(sides):
