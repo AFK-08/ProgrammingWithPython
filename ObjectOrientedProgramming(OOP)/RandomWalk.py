@@ -7,8 +7,8 @@ direction=[0,90,180,270]
 screen=Screen()
 timmy=Turtle()
 timmy.pensize(15)
-turtle.speed(0)
-for _ in range(100):
+turtle.speed("fastest")
+for _ in range(200):
     timmy.color(random.choice(colors))
     timmy.setheading(random.choice(direction))
     timmy.forward(30)
