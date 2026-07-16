@@ -17,6 +17,7 @@ def random_color():
 
 direction=[0,90,180,270]
 screen=Screen()
+screen.bgcolor("maroon")
 
 timmy=Turtle()
 timmy.pensize(15)
