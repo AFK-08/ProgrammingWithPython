@@ -2,6 +2,7 @@ import turtle,random
 from turtle import Turtle,Screen
 screen=Screen()
 screen.setup(width=600,height=600)
+screen.title("Racing Game")
 race_on=False
 
 user_guess =screen.textinput(title="Turtle Race",prompt="Which color Turtle will win?")
@@ -24,14 +25,13 @@ for object in list:
     object.goto(x=-280,y=direction)
     direction=direction+60
     index+=1
-
 if user_guess:
     race_on=True
 
 while race_on:
 
     for object in list:
-
+        object.pendown()
         if object.xcor()>280:
             race_on=False
             winner=object.pencolor()
