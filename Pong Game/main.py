@@ -54,12 +54,14 @@ while game_on:
     
     ## Detecting Ball missed by Paddles:
     if ball.xcor()>400: 
-        ball.reset()
         score.left_points()
+        ball.reset()
+        
 
     if ball.xcor()<-400:
-        ball.reset()
         score.right_points()
+        ball.reset()
+        
     
 
     
