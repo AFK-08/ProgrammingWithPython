@@ -11,6 +11,8 @@ def random_color():
     return color
 
 screen=Screen()
+screen.title("Spirograph")
+screen.bgcolor("white")
 timmy=Turtle()
 timmy.speed("fastest")
 timmy.pensize(1.2)
