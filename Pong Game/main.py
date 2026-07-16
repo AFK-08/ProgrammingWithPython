@@ -1,5 +1,7 @@
 from turtle import Screen,Turtle
 from paddle import Paddle
+from ball import Ball
+import time
 
 ## Screen Setup
 screen=Screen()
@@ -21,9 +23,23 @@ screen.onkeypress(fun=left_paddle.down,key="s")
 screen.onkeypress(fun=right_paddle.up,key="Up")
 screen.onkeypress(fun=right_paddle.down,key="Down")
 
+## Creating ball object
+ball=Ball()
+
+
 game_on=True
 while game_on:
+    time.sleep(0.1)
     screen.update()
+    ball.move()
+
+    ## Detecting Collison with the Wall:
+    if ball.ycor()>285 or ball.ycor()<-285:
+        ball.bounce()
+    
+    ## Detecting Collision with Paddles:
+
+    
 
 
 
