@@ -28,7 +28,10 @@ for thing in programming_dicts:
     print(thing)            ##It will only print keys not values
     print(programming_dicts[thing]) ##This prints value
 
+print("**********************************")
 
+for (key,value) in programming_dicts.items():
+    print(value)
 
 
 
