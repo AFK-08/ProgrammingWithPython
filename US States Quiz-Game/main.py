@@ -42,12 +42,8 @@ while len(guessed_states)<50:
         guessed_states.append(answer_state)
 
 ## Creating CSV file for user to learn what he missed.
-missing_states=[]
-for states in states_list:
-        if states not in guessed_states:
-                missing_states.append(states)
-        else:
-            pass
+
+missing_states= [states for states in states_list if states not in guessed_states]
 
 learn = pandas.DataFrame(missing_states)
 learn.to_csv("./US States Quiz-Game/learn.csv")
