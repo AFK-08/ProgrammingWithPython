@@ -60,6 +60,27 @@ data = pandas.DataFrame(data_dictionary)
 print(data)
 
 
+## Looping Through the DataFrames:
+
+students_dictionary = {
+    "names": ["Ali","Ahmad","Mahib"],
+    "scores": [10,20,30] 
+}
+
+student_dataframe = pandas.DataFrame(students_dictionary)
+print(student_dataframe)
+## Looping:
+for (index,row) in student_dataframe.iterrows():
+    print(index)
+
+for (index,row) in student_dataframe.iterrows():
+    print(row)
+
+print("***************************************")
+
+for (index,row) in student_dataframe.iterrows():
+    print(row.scores)
+
 
 
 
