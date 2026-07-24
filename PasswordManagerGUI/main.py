@@ -49,7 +49,7 @@ def save():
                     data = json.load(data_file)
 
                     data.update(new_data)
-            except:
+            except FileNotFoundError:
                 with open("./PasswordManagerGUI/data.json", "w") as data_file:
                     json.dump(new_data,data_file,indent=4)
 
