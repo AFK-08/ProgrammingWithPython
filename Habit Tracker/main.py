@@ -31,4 +31,13 @@ headers = {
 # response.raise_for_status()
 # print(response.text)
 
+pixels_endpoint = "https://pixe.la/v1/users/ahmadfk/graphs/graph1"
+
+pixels_config= {
+    "date": "20260726",
+    "quantity": "8"
+}
+
+# response = requests.post(url=pixels_endpoint,json=pixels_config,headers=headers)
+# print(response.text)
 
