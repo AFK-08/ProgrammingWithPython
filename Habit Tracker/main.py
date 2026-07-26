@@ -1,6 +1,11 @@
 ## PIXELA API PIXELS GRAPH API
 
 import requests
+from datetime import datetime
+
+## Accessing Current Date
+today = datetime.now()
+current_date = today.strftime("%Y%m%d")
 
 USERNAME = "ahmadfk"
 TOKEN = "Abcd1234ghi"
@@ -38,8 +43,8 @@ headers = {
 pixels_endpoint = "https://pixe.la/v1/users/ahmadfk/graphs/graph1"
 
 pixels_config= {
-    "date": "20260726",
-    "quantity": "8"
+    "date": current_date,
+    "quantity": "15"
 }
 
 # response = requests.post(url=pixels_endpoint,json=pixels_config,headers=headers)
