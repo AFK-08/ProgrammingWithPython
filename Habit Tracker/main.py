@@ -1,7 +1,11 @@
+## PIXELA API PIXELS GRAPH API
+
 import requests
 
 USERNAME = "ahmadfk"
 TOKEN = "Abcd1234ghi"
+
+## Creating User Account on Pixela API
 
 pixela_endpoint = "https://pixe.la/v1/users"
 user_params = {
@@ -41,3 +45,10 @@ pixels_config= {
 # response = requests.post(url=pixels_endpoint,json=pixels_config,headers=headers)
 # print(response.text)
 
+pixels_update = "https://pixe.la/v1/users/ahmadfk/graphs/graph1/20260726"
+pixels_update_config = {
+    "quantity": "8",
+}
+
+# response = requests.put(url=pixels_update,json=pixels_update_config,headers=headers)
+# print(response.text)
