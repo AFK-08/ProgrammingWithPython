@@ -14,4 +14,13 @@ data = response.json()
 print(data)
 
 
+## Advanced Authentication Methods:
+## GET , POST, PUT , Delete
+
+## Get data from API
+## Post used to post data through api
+## Put updates data
+## Delete data 
+
+
 
