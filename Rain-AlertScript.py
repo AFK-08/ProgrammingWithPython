@@ -36,7 +36,7 @@ for index in range(0,3):
         break
 
 if int(code)>700:
-    message = "Ahmad! The Sky is Clear Today. Kill today."
+    message = "Ahmad! The Sky is Clear, There is no Rain Possibility Today\n be focused towards work. "
 else:
     message = "There is going to be Rain Today Ahmad!"
 
