@@ -17,16 +17,15 @@ screen.tracer(0)
 line=Line()
 
 ## Creating Paddle
-right_paddle=Paddle(360)
-left_paddle=Paddle(-360)
-
+right_paddle=Paddle(370)
+left_paddle=Paddle(-380)
 
 ## Moving Paddles
 
 screen.listen()
 screen.onkeypress(fun=left_paddle.up,key="w")
-screen.onkeypress(fun=left_paddle.down,key="s")
 screen.onkeypress(fun=right_paddle.up,key="Up")
+screen.onkeypress(fun=left_paddle.down,key="s")
 screen.onkeypress(fun=right_paddle.down,key="Down")
 
 ## Creating ball object

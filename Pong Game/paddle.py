@@ -14,9 +14,12 @@ class Paddle(Turtle):
 
 
     def up(self):
-        self.forward(12)
+        if self.ycor()<248:
+            self.forward(12)
+
     def down(self):
-        self.backward(12)
+        if self.ycor()>-248:
+            self.backward(12)
 
         
         
